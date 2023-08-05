@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full tab header</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btn">
+      <button class="tablink" onclick="openTab('London', this, 'red')" id="defaultOpen">London</button>
+      <button class="tablink" onclick="openTab('Dhaka', this, 'greenyellow')">Dhaka</button>
+      <button class="tablink" onclick="openTab('China', this, 'orange')">China</button>
+      <button class="tablink" onclick="openTab('Birisiri', this, 'green')">Birisiri</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+        <h2>London</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ab magnam laudantium officiis magni excepturi.</p>
+    </div>
+    <div id="Dhaka" class="tabcontent">
+        <h2>Dhaka</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ab magnam laudantium officiis magni excepturi.</p>
+    </div>
+    <div id="China" class="tabcontent">
+        <h2>China</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ab magnam laudantium officiis magni excepturi.</p>
+    </div>
+    <div id="Birisiri" class="tabcontent">
+        <h2>Birisiri</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ab magnam laudantium officiis magni excepturi.</p>
+    </div>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>

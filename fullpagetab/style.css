@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+}
+
+.tablink {
+    width: 25%;
+    float: left;
+    border: none;
+    outline: none;
+    background-color: rgb(102, 101, 99);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+.tablink:hover {
+    background-color: antiquewhite;
+    color: aqua;
+}
+
+.tabcontent {
+    height: 100%;
+    text-align: center;
+    padding: 100px 30px;
+    color: white;
+    display: none;
+}
+
+#London {
+    background-color: red;
+}
+
+#Dhaka {
+    background-color: greenyellow;
+}
+
+#China {
+    background-color: orange;
+}
+
+#Birisiri {
+    background-color: green;
+}
