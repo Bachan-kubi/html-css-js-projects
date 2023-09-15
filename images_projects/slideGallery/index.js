@@ -2,11 +2,12 @@ let slideIndex = 1;
 
 // previues button
 function plusSlides(n){
-    showSlides(slideIndex += n)
+    showSlides(slideIndex =slideIndex + n);
+    // showSlides(slideIndex += n);
 }
 // image control
 function controlImg(n){
-    showSlides(slideIndex = n)
+    showSlides(slideIndex = n);
 }
 
 
@@ -26,6 +27,7 @@ function showSlides(n){
     for(let i=1; i<dots.length; i++){
         dots[i].className = dots[i].className.replace(" active", "");
     }
+    console.log(slideIndex-1);
     slides[slideIndex-1].style.display = 'block';
     dots[slideIndex-1].className += " active";
 }
