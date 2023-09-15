@@ -1,0 +1,23 @@
+/*let slideIndex = 1;: This variable slideIndex is used to keep track of the currently displayed image slide. It is initialized to 1, indicating that the first slide is initially displayed.
+
+function plusSlides(n) { showSlides(slideIndex += n) }: This function plusSlides(n) takes a parameter n, which represents the number of slides to move forward or backward. It calls the showSlides function with the updated slideIndex to display the next or previous slide. It increments or decrements slideIndex by n to move to the desired slide.
+
+function controlImg(n) { showSlides(slideIndex = n) }: This function controlImg(n) takes a parameter n, which represents the specific slide to display. It directly sets the slideIndex to n and then calls the showSlides function with this new slideIndex to display the selected slide.
+
+function showSlides(n) { ... }: This is the core function responsible for displaying the slides and updating the navigation dots. It takes the parameter n, which represents the desired slide index to display.
+
+Inside this function, it first gets references to all the image slides and navigation dots using document.getElementsByClassName.
+
+The if statements check whether the provided n is out of range. If n is greater than the total number of slides, it sets slideIndex to 1, effectively looping back to the first slide. If n is less than 1, it sets slideIndex to the last slide, allowing the slider to loop back to the end.
+
+The first for loop iterates through all the image slides and hides them by setting their display property to 'none'.
+
+The second for loop iterates through all the navigation dots and removes the "active" class from them, effectively resetting their styles.
+
+Then, it displays the slide corresponding to the updated slideIndex by setting its display property to 'block'.
+
+Finally, it adds the "active" class to the navigation dot corresponding to the currently displayed slide to highlight it.
+
+showSlides(slideIndex);: This line calls the showSlides function initially with slideIndex to display the first slide when the page loads.
+
+Together, these functions and code segments create a functional image slider with navigation dots and buttons for controlling the displayed images.*/
