@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img-container{
+    width: 60%;
+    margin: 25px auto;
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 0 3px 3px 0;
+    /* margin-top: px; */
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgb(150, 149, 149);
+}
+.caption{
+    color: coral;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 12px;
+    bottom: 10px;
+    width: 100%;
+    position: absolute;
+}
+.numberText{
+    position: absolute;
+    top: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    margin: 0 2px;
+}
+.dots{
+    text-align: center;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.active, .dot:hover{
+    background-color: aqua;
+}

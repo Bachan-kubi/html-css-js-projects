@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Photo Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- imag container -->
+    <div class="img-container">
+        <!-- images slides -->
+      <div class="mySlides fade">
+        <div class="numberText">1/8</div>
+        <img src="./src/img-1.jpg" alt="natural image" width="100%" />
+        <div class="caption">Cloud and Sky</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">2/8</div>
+        <img src="./src/img-2.jpg" alt="natural image" width="100%" />
+        <div class="caption">Cloud and Sky</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">3/8</div>
+        <img src="./src/img-3.jpg" alt="natural image" width="100%" />
+        <div class="caption">Cloud and Sky</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">4/8</div>
+        <img src="./src/img-4.jpg" alt="natural image" width="100%" />
+        <div class="caption">Cloud and Sky</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">5/8</div>
+        <img src="./src/img-5.jpg" alt="natural image" width="100%" />
+        <div class="caption">Cloud and Sky</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">6/8</div>
+        <img src="./src/img-6.jpg" alt="natural image" width="100%" />
+        <div class="caption">Cloud and Sky</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">7/8</div>
+        <img src="./src/img-7.jpg" alt="natural image" width="100%" />
+        <div class="caption">Calm Nature!</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">8/8</div>
+        <img src="./src/img-8.jpg" alt="natural image" width="100%" />
+        <div class="caption">Image Glues</div>
+      </div>
+      <!-- prev and next button -->
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+    <br>
+    <!-- dots to indicates images -->
+    <div class="dots">
+        <span class="dot" onclick="controlImg(1)"></span>
+        <span class="dot" onclick="controlImg(2)"></span>
+        <span class="dot" onclick="controlImg(3)"></span>
+        <span class="dot" onclick="controlImg(4)"></span>
+        <span class="dot" onclick="controlImg(5)"></span>
+        <span class="dot" onclick="controlImg(6)"></span>
+        <span class="dot" onclick="controlImg(7)"></span>
+        <span class="dot" onclick="controlImg(8)"></span>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./utilities.js"></script>
+  </body>
+</html>
