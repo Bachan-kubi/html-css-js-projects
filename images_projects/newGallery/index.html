@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Images Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- full image with numeber text -->
+        <div class="slidingImg">
+            <div class="img-numbers">1/8</div>
+            <img src="./src/img-1.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">2/8</div>
+            <img src="./src/img-2.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">3/8</div>
+            <img src="./src/img-3.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">4/8</div>
+            <img src="./src/img-4.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">5/8</div>
+            <img src="./src/img-5.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">6/8</div>
+            <img src="./src/img-6.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">7/8</div>
+            <img src="./src/img-7.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slidingImg">
+            <div class="img-numbers">8/8</div>
+            <img src="./src/img-8.jpg" alt="" style="width: 100%;">
+        </div>
+
+        <!-- next and prev slides -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- caption part -->
+        <div class="caption-container">
+            <h2 id="captions"></h2>
+        </div>
+        <!-- thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-1.jpg" alt="trial image" onclick="imgControl(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-2.jpg" alt="Seashore" onclick="imgControl(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-3.jpg" alt="back to ghot" onclick="imgControl(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-4.jpg" alt="trial image" onclick="imgControl(4)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-5.jpg" alt="His image" onclick="imgControl(5)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-6.jpg" alt="Last one image" onclick="imgControl(6)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-7.jpg" alt="trial image" onclick="imgControl(7)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" style="width: 100%;" src="./src/img-8.jpg" alt="Bakc to pav image" onclick="imgControl(8)">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

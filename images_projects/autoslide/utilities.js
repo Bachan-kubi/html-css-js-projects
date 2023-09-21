@@ -3,6 +3,7 @@ showSlides();
 function showSlides(){
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
+    console.log(slides[imageNumber])
     for(let i=0; i<slides.length; i++){
         slides[i].style.display = "none";
     }
@@ -12,10 +13,11 @@ function showSlides(){
     }
     slides[imageNumber-1].style.display= "block";
     dots[imageNumber-1].className += " active";
-    console.log(slides[imageNumber-1], dots[imageNumber-1]);
-    // console.log(slides[imageNumber], dots[imageNumber]);
+    console.log(imageNumber)
+    // console.log(slides[imageNumber-1], dots[imageNumber-1]);
+    console.log(slides[imageNumber], dots[imageNumber]);
     if(imageNumber>=slides.length){
         imageNumber = 0;
     }
-    setTimeout(showSlides, 1000);
+    // setTimeout(showSlides, 1000);
 }
