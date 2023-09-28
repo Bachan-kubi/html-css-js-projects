@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 25px auto;
+    width: 40%;
+}
+#myImage{
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.3s;
+}
+#myImage:hover{
+    opacity: 0.6;
+}
+.modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1;
+    background-color: rgb(206, 200, 200);
+    background-color: rgba(3, 3, 3, 0.9);
+}
+.model-content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+}
+#caption{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    height: 150px;
+}
+.model-content, #caption{
+    animation: zoom;
+    animation-duration: 0.4s;
+}
+.close{
+    font-size: 30px;
+    font-weight: bolder;
+    top: 15px;
+    right: 40px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+#myModel{
+    cursor: pointer;
+}
+
+@keyframes zoom{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}

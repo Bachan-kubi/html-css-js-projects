@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- starting image part -->
+      <div class="row">
+        <div class="column">
+          <img src="./src/img-1.jpg" alt="image-one" onclick="openModal()" />
+        </div>
+        <div class="column">
+          <img src="./src/img-2.jpg" alt="image-two" onclick="openModal()" />
+        </div>
+        <div class="column">
+          <img src="./src/img-3.jpg" alt="image-three" onclick="openModal()" />
+        </div>
+        <div class="column">
+          <img src="./src/img-4.jpg" alt="image-four" onclick="openModal()" />
+        </div>
+      </div>
+      <!-- modal-part -->
+      <div class="modal" id="myModal">
+        <span id="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="slides">
+            <div class="numbers">1/4</div>
+            <img src="./src/img-1.jpg" alt="Image One" width="100%" />
+          </div>
+          <div class="slides">
+            <div class="numbers">2/4</div>
+            <img src="./src/img-2.jpg" alt="Image two" width="100%" />
+          </div>
+          <div class="slides">
+            <div class="numbers">3/4</div>
+            <img src="./src/img-3.jpg" alt="Image trhee" width="100%" />
+          </div>
+          <div class="slides">
+            <div class="numbers">4/4</div>
+            <img src="./src/img-4.jpg" alt="Image four" width="100%" />
+          </div>
+
+          <!-- next-prev control button -->
+          <a class="prev" onclick="currentSlides(-1)">&#10094;</a>
+          <a class="next" onclick="currentSlides(1)">&#10095;</a>
+          <!-- thumbnail image control -->
+
+          <div class="col">
+            <div class="demo">
+              <img src="./src/img-1.jpg" alt="image-one" />
+            </div>
+            <div class="demo">
+              <img src="./src/img-2.jpg" alt="image-two" />
+            </div>
+            <div class="demo">
+              <img src="./src/img-3.jpg" alt="image-three" />
+            </div>
+            <div class="demo">
+              <img src="./src/img-4.jpg" alt="image-four" />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
